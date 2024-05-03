@@ -1,11 +1,6 @@
 .logo {
-<<<<<<< HEAD
-  height: auto;
-  width: 20%;
-=======
     height: auto;
     width: 20%;
->>>>>>> aec41bf0e0f3202ea781253502377b7806ff3293
 }
 
 /*
@@ -15,7 +10,6 @@ font-family: "Sue Ellen Francisco", cursive;
 */
 
 main {
-<<<<<<< HEAD
   font-family: "Sriracha", cursive;
 }
 
@@ -159,7 +153,4 @@ header {
   .nav-toggle {
     display: none;
   }
-=======
-    font-family: "Sriracha", cursive;
->>>>>>> aec41bf0e0f3202ea781253502377b7806ff3293
 }
