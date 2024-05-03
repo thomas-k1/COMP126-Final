@@ -1,6 +1,11 @@
 .logo {
+<<<<<<< HEAD
+  height: auto;
+  width: 20%;
+=======
     height: auto;
     width: 20%;
+>>>>>>> aec41bf0e0f3202ea781253502377b7806ff3293
 }
 
 /*
@@ -10,32 +15,12 @@ font-family: "Sue Ellen Francisco", cursive;
 */
 
 main {
-    font-family: "Sriracha", cursive;
+<<<<<<< HEAD
+  font-family: "Sriracha", cursive;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
 
-a:active,
-a:hover {
-  outline: 0;
-}
-
-@font-face {
-  font-family: "responsivenav";
-  src: url("../icons/responsivenav.eot");
-  src: url("../icons/responsivenav.eot?#iefix") format("embedded-opentype"),
-    url("../icons/responsivenav.ttf") format("truetype"),
-    url("../icons/responsivenav.woff") format("woff"),
-    url("../icons/responsivenav.svg#responsivenav") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
+/* from a4 nav bar */
 .nav-toggle {
   text-decoration: none;
   text-indent: -300px;
@@ -174,4 +159,7 @@ header {
   .nav-toggle {
     display: none;
   }
+=======
+    font-family: "Sriracha", cursive;
+>>>>>>> aec41bf0e0f3202ea781253502377b7806ff3293
 }
