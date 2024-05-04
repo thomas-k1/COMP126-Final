@@ -10,22 +10,25 @@ font-family: "Sue Ellen Francisco", cursive;
 */
 
 main {
-font-family: "Sriracha", cursive;
+  padding: 0em 2em 0em;
+  font-family: "Sriracha", cursive;
 }
 
 body {
-font-family: "Dosis", sans-serif;
-padding-top: 60px; /* for fixed header */
+  font-family: "Dosis", sans-serif;
+  padding-top: 60px; /* for fixed header */
 }
 
-.content {
-}
 .content p {
-line-height: 1.6;
-font-size: 16px;
-color: #666;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #666;
 }
 
+.footer {
+  background-color: #DDDDDD;
+  padding: 0em 2em 0em;
+}
 
 a:active,
 a:hover {
@@ -54,7 +57,7 @@ float: right;
 }
 
 .nav-toggle:before {
-color: black; /* edit this to change the icon color */
+color: #B4055B;
 font: normal 28px/55px "responsivenav"; /* edit font-size (28px) to change the icon size */
 text-transform: none;
 text-align: center;
@@ -67,11 +70,9 @@ top: 0;
 }
 
 .nav-toggle.active:before {
-font-size: 24px;
-content: "\78"; /* X/close icon */
+  font-size: 24px;
+  content: "\78"; /* X/close icon */
 }
-
-
 
 .nav-collapse ul {
 margin: 0;
@@ -82,9 +83,8 @@ flex-direction: column;
 align-items: flex-end;
 }
 
-.nav-collapse li {
-
-display: block;
+.nav-collapse li { 
+  display: block;
 }
 
 .js .nav-collapse {
@@ -104,6 +104,7 @@ header {
 display: flex;
 justify-content: space-between;
 position: fixed; 
+background-color: white;
 }
 
 @media screen and (min-width: 700px) {
@@ -122,7 +123,6 @@ text-decoration: none;
 font-weight: bold;
 line-height: 55px;
 padding: 0 20px;
-color: black;
 }
 
 .fixed {
@@ -146,9 +146,11 @@ justify-content: end;
 }
 
 .nav-collapse a {
+font-family: Dosis-SemiBold;
 text-decoration: none;
+font-weight: ;
 padding: 0.7em 1em;
-color: black;
+color: #B4055B;
 width: 100%;
 display: block;
 }
