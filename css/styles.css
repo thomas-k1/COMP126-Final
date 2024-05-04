@@ -25,9 +25,11 @@ body {
   color: #666;
 }
 
-.footer {
+footer {
   background-color: #DDDDDD;
-  padding: 0em 2em 0em;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
 }
 
 a:active,
