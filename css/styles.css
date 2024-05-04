@@ -10,13 +10,16 @@ font-family: "Sue Ellen Francisco", cursive;
 */
 
 main {
-  padding: 0em 2em 0em;
+  padding: 0em 2em;
   font-family: "Sriracha", cursive;
+  padding-top: 100px; 
 }
 
-body {
+body.about-page {
   font-family: "Dosis", sans-serif;
-  padding-top: 60px; /* for fixed header */
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .content p {
@@ -27,21 +30,25 @@ body {
 
 footer {
   background-color: #DDDDDD;
+  margin-top: 2em ;
   text-align: left;
   display: flex;
   justify-content: flex-start;
 }
 
 .image-container {
-  display: flex;
-  flex-direction: column;
-  margin: 2em;
-  justify-content: center;
+  float: right;
+  width: 40%; 
+  margin: 0 0 0rem 1rem; 
+  background-color: red;
+  vertical-align: top; 
 }
 
 .image-container img {
-  object-fit: cover;
-  max-width: 10%;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block; 
 }
 
 a:active,
@@ -115,23 +122,28 @@ max-height: 9999px;
 }
 
 header {
-display: flex;
-justify-content: space-between;
-position: fixed; 
-background-color: white;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  position: fixed; 
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: white;
+  height: 70px; /* Adjust as necessary */
 }
+
 
 @media screen and (min-width: 700px) {
-}
+
 
 header {
-position: fixed;
-z-index: 3;
-width: 100%;
-left: 0;
-top: 0;
-}
+  height: 50px;
+} 
 
+main {
+  padding-top: 60px; 
+}
 .logo {
 text-decoration: none;
 font-weight: bold;
@@ -172,12 +184,14 @@ display: block;
 padding-left: 2em;
 }
 
-
-@media screen and (min-width: 768px) {
 .nav-collapse ul {
 flex-direction: row;
 align-items: flex-end;
 }
+
+header {
+  height: 50px;
+ } 
 
 .nav-collapse li {
   width: auto;
