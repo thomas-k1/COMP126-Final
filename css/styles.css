@@ -32,6 +32,18 @@ footer {
   justify-content: flex-start;
 }
 
+.image-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  justify-content: center;
+}
+
+.image-container img {
+  object-fit: cover;
+  max-width: 10%;
+}
+
 a:active,
 a:hover {
 outline: 0;
