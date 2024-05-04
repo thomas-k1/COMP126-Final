@@ -1,6 +1,6 @@
 .logo {
-    height: auto;
-    width: 20%;
+    height: 10vh;
+    width: width;
 }
 
 /*
@@ -16,6 +16,15 @@ main {
 body {
   font-family: "Dosis", sans-serif;
 }
+
+
+.content p {
+  line-height: 1.6;
+  font-size: 16px;
+  color: #666;
+}
+
+
 
 a:active,
 a:hover {
@@ -60,6 +69,8 @@ a:hover {
   font-size: 24px;
   content: "\78"; /* X/close icon */
 }
+
+
 
 .nav-collapse ul {
   margin: 0;
