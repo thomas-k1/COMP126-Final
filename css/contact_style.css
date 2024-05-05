@@ -39,8 +39,6 @@ img {
 .feedback-form {
     display: flex;
     flex-direction: column;
-    max-width: 600px; /* adjust width as needed */
-    margin: auto; /* centers the form on the page */
 }
 
 .feedback-form h1 {
@@ -54,7 +52,6 @@ img {
 }
 
 .feedback-form label {
-    margin-bottom: 0.5em;
     color: #666; /* lightens the label color for a subtle design */
 }
 
@@ -69,7 +66,7 @@ img {
 }
 
 .feedback-form textarea {
-    height: 150px; /* sets a fixed height for the textarea */
+    height: 50vh; /* sets a fixed height for the textarea */
 }
 
 .feedback-form input[type="submit"] {
@@ -87,3 +84,25 @@ img {
     background-color: #0056b3; /* darker blue on hover for better interaction */
 }
 
+@media screen and (min-width: 768px) {
+    main {
+        padding-left: 0px;
+        padding-right: 0px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row; /* Ensures the sections are side-by-side */
+        width: 90vw;/* Ensures main element spans the full width */
+        margin: 0; /* Removes default margin */
+        padding: 0; /* Removes default padding */
+    }
+    .top-section {
+        flex: 2; /* Takes up two-thirds of the space */
+        margin: 0; /* Optional: remove margin if present */
+        padding: 0; /* Optional: adjust padding as needed */
+    }
+    .feedback-form {
+        flex: 1; /* Takes up one-third of the space */
+        margin: 0; /* Optional: remove margin if present */
+        padding: 0; /* Optional: adjust padding as needed */
+    }
+}
