@@ -180,6 +180,24 @@ footer {
   }
 }
 
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  .home-about > h1 {
+    font-size: 24px;
+  }
+
+  .home-about > h2 {
+    font-size: 20px;
+  }
+
+  .home-about > h3 {
+    font-size: 16px;
+  }
+
+  .home-about > p {
+    font-size: 14px;
+  }
+}
+
 a:active,
 a:hover {
 outline: 0;
@@ -292,6 +310,27 @@ position: fixed;
 width: 100%;
 left: 0;
 top: 0;
+}
+
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.home-flavors {
+  grid-column: 1 / 2;
+  background-size: cover;
+}
+
+.home-about {
+  grid-column: 2 / 3;
+  background-size: cover;
+}
+
+.home-contact {
+  grid-column: 3 / 4;
+  background-size: cover;
+  margin-top: 0;
 }
 
 .nav-collapse,
