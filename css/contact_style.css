@@ -7,10 +7,6 @@
     height: 60%;
 }
 
-
-
-
-
 .social-media {
     display: flex;
     flex-direction: column;
@@ -23,17 +19,21 @@ img {
 }
 
 .social-row {
-    display: flex; /* Use flexbox to layout image and text */
-    align-items: center; /* Align items vertically */
-    margin-bottom: 10px; /* Space between rows */
+    display: flex;
+    /* Use flexbox to layout image and text */
+    align-items: center;
+    /* Align items vertically */
+    margin-bottom: 10px;
+    /* Space between rows */
 }
 
 .social-logo {
-    margin-right: 10px; /* Space between the logo and text */
+    margin-right: 10px;
+    /* Space between the logo and text */
 }
 
 .social-text {
-    margin: 0; /* Remove default paragraph margin */
+    margin: 0;
 }
 
 .feedback-form {
@@ -52,7 +52,7 @@ img {
 }
 
 .feedback-form label {
-    color: #666; /* lightens the label color for a subtle design */
+    color: #666;
 }
 
 .feedback-form input[type="email"],
@@ -61,48 +61,45 @@ img {
     margin-bottom: 1em;
     border-radius: 5px;
     border: 1px solid #ccc;
-    width: 100%; /* ensures the input takes full width of the form */
-    box-sizing: border-box; /* includes padding and border in the element's total width and height */
+    width: 100%;
+    /* ensures the input takes full width of the form */
+    box-sizing: border-box;
 }
 
 .feedback-form textarea {
-    height: 50vh; /* sets a fixed height for the textarea */
+    height: 50vh;
+    /* sets height for the textarea */
 }
 
 .feedback-form input[type="submit"] {
     padding: 1em;
     border-radius: 5px;
     border: none;
-    background-color: #007BFF; /* a vibrant blue that stands out */
+    background-color: #007BFF;
     color: white;
     cursor: pointer;
-    align-self: flex-end; /* aligns the submit button to the right */
-    transition: background-color 0.3s; /* smooth transition for hover effect */
+    align-self: flex-end;
+    /* aligns the submit button to the right */
+    transition: background-color 0.3s;
 }
 
 .feedback-form input[type="submit"]:hover {
-    background-color: #0056b3; /* darker blue on hover for better interaction */
+    background-color: #0056b3;
 }
 
 @media screen and (min-width: 768px) {
     main {
-        padding-left: 0px;
-        padding-right: 0px;
         display: flex;
         justify-content: center;
-        flex-direction: row; /* Ensures the sections are side-by-side */
-        width: 90vw;/* Ensures main element spans the full width */
-        margin: 0; /* Removes default margin */
-        padding: 0; /* Removes default padding */
+        flex-direction: row;
+        width: 90vw;
     }
+
     .top-section {
-        flex: 2; /* Takes up two-thirds of the space */
-        margin: 0; /* Optional: remove margin if present */
-        padding: 0; /* Optional: adjust padding as needed */
+        flex: 2;
     }
+
     .feedback-form {
-        flex: 1; /* Takes up one-third of the space */
-        margin: 0; /* Optional: remove margin if present */
-        padding: 0; /* Optional: adjust padding as needed */
+        flex: 1;
     }
 }
