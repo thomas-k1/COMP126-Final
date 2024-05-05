@@ -3,8 +3,19 @@
     justify-content: space-evenly;
 }
 
+
 .location-embed {
-    height: 60%;
+    height: 30vh;
+    width: auto;
+    margin: 2vh 1vh 2vh 0;
+}
+
+h2 {
+    font-family: "Sriracha", cursive;
+  }
+
+p {
+    font-family: Dosis-SemiBold;
 }
 
 .social-media {
@@ -12,6 +23,12 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+img.logo {
+    width: auto; /* Reset width */
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+}
+
 
 img {
     width: 10%;
@@ -35,56 +52,48 @@ img {
 .social-text {
     margin: 0;
 }
-
 .feedback-form {
-    display: flex;
-    flex-direction: column;
+    padding: 2%;
+    color:#B4055B;
 }
-
-.feedback-form h1 {
-    text-align: left;
-    color: #333;
-}
-
-.feedback-form form {
-    display: flex;
-    flex-direction: column;
-}
-
-.feedback-form label {
-    color: #666;
-}
-
 .feedback-form input[type="email"],
 .feedback-form textarea {
     padding: 0.8em;
     margin-bottom: 1em;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 2px solid #B4055B;
     width: 100%;
-    /* ensures the input takes full width of the form */
     box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
 }
 
 .feedback-form textarea {
-    height: 50vh;
-    /* sets height for the textarea */
+    height: 10vh; /* Smaller initial height */
+    min-height: 50px; /* Minimum height */
+    max-height: 50vh; /* Maximum height */
+    overflow-y: auto; /* Enable vertical scroll when necessary */
 }
 
 .feedback-form input[type="submit"] {
     padding: 1em;
     border-radius: 5px;
     border: none;
-    background-color: #007BFF;
+    background-color: #D53185;
     color: white;
     cursor: pointer;
     align-self: flex-end;
-    /* aligns the submit button to the right */
     transition: background-color 0.3s;
+    margin-top: 1em;
 }
 
 .feedback-form input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #B4055B;
+}
+
+.feedback-form input[type="email"]:hover,
+.feedback-form textarea:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly increase shadow on hover */
 }
 
 @media screen and (min-width: 768px) {

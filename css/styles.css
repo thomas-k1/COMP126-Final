@@ -298,7 +298,9 @@ header {
   justify-content: space-between;
   position: fixed; 
   width: 98%;
+  
   margin: 2% 2% 0;
+  padding-bottom: 2%;
   background-color: white;
   height: 90px;
 }
