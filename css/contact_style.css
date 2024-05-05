@@ -1,0 +1,89 @@
+.top-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.location-embed {
+    height: 60%;
+}
+
+
+
+
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+img {
+    width: 10%;
+    display: inline-block;
+}
+
+.social-row {
+    display: flex; /* Use flexbox to layout image and text */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px; /* Space between rows */
+}
+
+.social-logo {
+    margin-right: 10px; /* Space between the logo and text */
+}
+
+.social-text {
+    margin: 0; /* Remove default paragraph margin */
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* adjust width as needed */
+    margin: auto; /* centers the form on the page */
+}
+
+.feedback-form h1 {
+    text-align: left;
+    color: #333;
+}
+
+.feedback-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-form label {
+    margin-bottom: 0.5em;
+    color: #666; /* lightens the label color for a subtle design */
+}
+
+.feedback-form input[type="email"],
+.feedback-form textarea {
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%; /* ensures the input takes full width of the form */
+    box-sizing: border-box; /* includes padding and border in the element's total width and height */
+}
+
+.feedback-form textarea {
+    height: 150px; /* sets a fixed height for the textarea */
+}
+
+.feedback-form input[type="submit"] {
+    padding: 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: #007BFF; /* a vibrant blue that stands out */
+    color: white;
+    cursor: pointer;
+    align-self: flex-end; /* aligns the submit button to the right */
+    transition: background-color 0.3s; /* smooth transition for hover effect */
+}
+
+.feedback-form input[type="submit"]:hover {
+    background-color: #0056b3; /* darker blue on hover for better interaction */
+}
+
