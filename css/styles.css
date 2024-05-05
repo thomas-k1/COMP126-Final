@@ -1,5 +1,5 @@
 .logo {
-  height: 10vh;
+  height: 6vh;
   width: width;
 }
 
@@ -21,6 +21,19 @@ body.about-page {
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
+
+.about-content {
+  padding: 90px 0 0 0;
+  text-align: left;
+}
+
+.about-content p {
+  text-align: left;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #666;
+}
+
 
 .content p {
   line-height: 1.6;
@@ -254,7 +267,7 @@ top: 0;
 }
 
 .nav-collapse ul {
-margin: 0;
+margin: 0 20px 0 0;
 padding: 0;
 display: flex;
 list-style: none;
@@ -389,4 +402,8 @@ align-items: flex-end;
 .nav-toggle {
   display: none;
 }
+}
+
+.about-content {
+  padding: 0;
 }
