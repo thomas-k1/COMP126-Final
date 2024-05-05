@@ -3,6 +3,10 @@
   width: width;
 }
 
+.menu-item:hover {
+  text-decoration: underline;
+}
+
 /*
 font-family: "Sriracha", cursive;
 font-family: "Dosis", sans-serif;
@@ -60,6 +64,10 @@ footer {
   margin-right: 3%;
 }
 
+.contact > a {
+  color: #B4055B;
+}
+
 .image-container {
   float: right;
   width: 40%; 
@@ -102,6 +110,7 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
 .home-button {
   font-family: Dosis-Bold;
   background-color: #FED8DF;
@@ -118,7 +127,6 @@ footer {
   cursor: pointer;
   background-image: radial-gradient(circle, #F5E2EA, #EFD2DE);
 }
-
 
 .home-about {
   background-size: contain;
